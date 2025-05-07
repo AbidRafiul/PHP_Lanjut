@@ -26,6 +26,10 @@
         echo $comment."<br>";
 
         echo  ("<hr>") ;
+        $data = trim ($data);
+        $data = stripslashes($data);
+        $data = htmlspecialchars($data);
+        return $data;
     }
     
     ?>
